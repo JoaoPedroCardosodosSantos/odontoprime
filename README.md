@@ -1,8 +1,5 @@
 # 🦷 OdontoPrime
 
-![OdontoPrime Preview](assets/screenshots/hero.png)
-
-
 Landing page profissional desenvolvida para uma clínica odontológica moderna.
 
 O projeto simula uma página real de conversão, com foco em **agendamento de consultas**, **confiança do paciente** e **apresentação de serviços odontológicos**.
@@ -14,19 +11,20 @@ O projeto simula uma página real de conversão, com foco em **agendamento de co
 
 ## Página inicial
 
-![Hero](assets/screenshots/hero.png)
+<img src="assets/screenshots/hero.png" width="700">
 
 
 
 ## Serviços
 
-![Serviços](assets/screenshots/services.png)
+<img src="assets/screenshots/services.png" width="700">
 
 
 
 ## Versão mobile
 
-![Mobile](assets/screenshots/mobile.png)
+<img src="assets/screenshots/mobile.png" hegth="500" width="300">
+
 
 
 
