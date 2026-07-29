@@ -9,18 +9,6 @@ O projeto simula uma página real de conversão, com foco em **agendamento de co
 
 ---
 
-## 🌐 Demonstração
-
-🔗 Acesse a versão online:
-
-https://odontoprime.vercel.app
-
-
-*(link demonstrativo — substituir pelo endereço real após publicação)*
-
-
----
-
 # 📸 Screenshots
 
 
