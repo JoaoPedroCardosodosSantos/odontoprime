@@ -1,0 +1,633 @@
+/* ==========================================================
+   ODONTOPRIME
+   ANIMATIONS STYLESHEET
+
+   Animations:
+   - Fade
+   - Reveal
+   - Floating
+   - Hover
+   - Loading
+   - Accessibility
+========================================================== */
+
+
+
+
+
+/* ==========================================================
+   FADE ANIMATIONS
+========================================================== */
+
+
+.fade-in {
+
+    opacity:0;
+
+    animation:
+
+    fadeIn .8s ease forwards;
+
+}
+
+
+
+
+
+.fade-in-up {
+
+    opacity:0;
+
+    transform:translateY(40px);
+
+    animation:
+
+    fadeInUp .8s ease forwards;
+
+}
+
+
+
+
+
+.fade-in-left {
+
+    opacity:0;
+
+    transform:translateX(-40px);
+
+    animation:
+
+    fadeInLeft .8s ease forwards;
+
+}
+
+
+
+
+
+.fade-in-right {
+
+    opacity:0;
+
+    transform:translateX(40px);
+
+    animation:
+
+    fadeInRight .8s ease forwards;
+
+}
+
+
+
+
+
+
+
+@keyframes fadeIn {
+
+
+    to {
+
+        opacity:1;
+
+    }
+
+
+}
+
+
+
+
+
+
+
+@keyframes fadeInUp {
+
+
+    to {
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+
+}
+
+
+
+
+
+
+
+@keyframes fadeInLeft {
+
+
+    to {
+
+        opacity:1;
+
+        transform:translateX(0);
+
+    }
+
+
+}
+
+
+
+
+
+
+
+@keyframes fadeInRight {
+
+
+    to {
+
+        opacity:1;
+
+        transform:translateX(0);
+
+    }
+
+
+}
+
+
+
+
+
+
+
+
+
+/* ==========================================================
+   FLOATING ELEMENTS
+========================================================== */
+
+
+.floating-card {
+
+    animation:
+
+    floating 4s ease-in-out infinite;
+
+}
+
+
+
+
+
+
+.floating-card--bottom {
+
+    animation-delay:
+
+    .8s;
+
+}
+
+
+
+
+
+
+@keyframes floating {
+
+
+    0% {
+
+        transform:translateY(0);
+
+    }
+
+
+    50% {
+
+        transform:translateY(-12px);
+
+    }
+
+
+    100% {
+
+        transform:translateY(0);
+
+    }
+
+
+}
+
+
+
+
+
+
+
+
+
+/* ==========================================================
+   BUTTON INTERACTIONS
+========================================================== */
+
+
+.btn {
+
+    position:relative;
+
+    overflow:hidden;
+
+}
+
+
+
+
+
+.btn::before {
+
+    content:"";
+
+    position:absolute;
+
+    width:0;
+
+    height:0;
+
+    border-radius:50%;
+
+    background:
+
+    rgba(255,255,255,.25);
+
+    transform:
+
+    translate(-50%,-50%);
+
+    transition:.5s;
+
+}
+
+
+
+
+
+.btn:hover::before {
+
+    width:300px;
+
+    height:300px;
+
+}
+
+
+
+
+
+
+
+
+
+/* ==========================================================
+   CARD ANIMATIONS
+========================================================== */
+
+
+.card,
+.service-card {
+
+
+    will-change:transform;
+
+
+}
+
+
+
+
+
+
+
+.card:hover,
+.service-card:hover {
+
+
+    transform:
+
+    translateY(-10px);
+
+
+}
+
+
+
+
+
+
+
+
+
+/* ==========================================================
+   IMAGE EFFECTS
+========================================================== */
+
+
+.hero__image img,
+.technology__image img {
+
+
+    transition:
+
+    transform .8s ease;
+
+
+}
+
+
+
+
+
+.hero__image:hover img,
+.technology__image:hover img {
+
+
+    transform:
+
+    scale(1.05);
+
+
+}
+
+
+
+
+
+
+
+
+
+/* ==========================================================
+   HEADER ANIMATION
+========================================================== */
+
+
+.header {
+
+
+    animation:
+
+    headerDrop .8s ease;
+
+
+}
+
+
+
+
+
+
+@keyframes headerDrop {
+
+
+    from {
+
+        opacity:0;
+
+        transform:
+
+        translateY(-30px);
+
+    }
+
+
+    to {
+
+        opacity:1;
+
+        transform:
+
+        translateY(0);
+
+    }
+
+
+}
+
+
+
+
+
+
+
+
+
+/* ==========================================================
+   SCROLL REVEAL SUPPORT
+========================================================== */
+
+
+.reveal {
+
+
+    opacity:0;
+
+    transform:
+
+    translateY(30px);
+
+    transition:
+
+    .8s ease;
+
+
+}
+
+
+
+
+
+.reveal.active {
+
+
+    opacity:1;
+
+    transform:
+
+    translateY(0);
+
+
+}
+
+
+
+
+
+
+
+
+
+/* ==========================================================
+   ICON ANIMATION
+========================================================== */
+
+
+.card__icon {
+
+
+    transition:
+
+    transform .3s ease;
+
+
+}
+
+
+
+
+
+.card:hover .card__icon {
+
+
+    transform:
+
+    rotate(8deg)
+    scale(1.1);
+
+
+}
+
+
+
+
+
+
+
+
+
+/* ==========================================================
+   LOADING ANIMATION
+========================================================== */
+
+
+.loading {
+
+
+    position:relative;
+
+    overflow:hidden;
+
+
+}
+
+
+
+
+
+.loading::after {
+
+
+    content:"";
+
+    position:absolute;
+
+    inset:0;
+
+
+    background:
+
+    linear-gradient(
+
+        90deg,
+
+        transparent,
+
+        rgba(255,255,255,.5),
+
+        transparent
+
+    );
+
+
+    animation:
+
+    loadingMove 1.5s infinite;
+
+
+}
+
+
+
+
+
+
+@keyframes loadingMove {
+
+
+    from {
+
+        transform:
+
+        translateX(-100%);
+
+    }
+
+
+    to {
+
+        transform:
+
+        translateX(100%);
+
+    }
+
+
+}
+
+
+
+
+
+
+
+
+
+/* ==========================================================
+   REDUCED MOTION ACCESSIBILITY
+========================================================== */
+
+
+@media(prefers-reduced-motion:reduce){
+
+
+
+    *,
+    *::before,
+    *::after {
+
+
+        animation-duration:
+
+        .01ms !important;
+
+
+        animation-iteration-count:
+
+        1 !important;
+
+
+        scroll-behavior:
+
+        auto !important;
+
+
+        transition-duration:
+
+        .01ms !important;
+
+
+    }
+
+
+}

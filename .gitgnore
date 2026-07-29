@@ -1,0 +1,12 @@
+# Sistema
+.DS_Store
+
+# Editor
+.vscode/
+
+# Node (caso seja adicionado futuramente)
+node_modules/
+
+# Arquivos temporários
+*.tmp
+*.log
